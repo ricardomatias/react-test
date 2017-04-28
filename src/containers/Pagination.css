@@ -1,0 +1,19 @@
+:local(.handles ul) {
+  list-style: none;
+  padding: 0;
+  flex-direction: row;
+  display: flex;
+  align-items: stretch;
+}
+
+:local(.handles li) {
+  padding: 5px;
+  background: white;
+  border: 1px solid #CCC;
+  width: 100%;
+  cursor: pointer;
+}
+
+:local(li.active) {
+  background: rgb(214, 215, 216);
+}
