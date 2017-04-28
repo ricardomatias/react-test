@@ -34,7 +34,7 @@ module.exports.createPageHandles = function createPageHandles(pages, currentPage
   } else {
     handles.push(1, PLACEHOLDER);
 
-    if (currentPage + INTERVAL >= pagesLength) {
+    if (currentPage + INTERVAL > pagesLength) {
       // f.ex: [ 'prev', 1, '..', 6, 7, 8, 'next' ]
       for (let index = pagesLength - INTERVAL + 1; index <= pagesLength; index++) {
         handles.push(index);
